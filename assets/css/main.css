@@ -68,8 +68,21 @@ body {
     
 }
 
+
+
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
+
+h1 {
+	font-family: 'Ruda', sans-serif;
+	font-weight: 900;
+	color: white;
+	-webkit-text-stroke: 1px black;
+
+
+}
+
+
+h2, h3, h4, h5, h6 {
     font-family: 'Ruda', sans-serif;
     font-weight: 900;
     color: #D24D57;
@@ -387,10 +400,10 @@ p.capitalize:first-letter {
 
 #headerwrap h1 {
 	margin-top: 60px;
-	color: #D24D57;
+	color: white;
 	font-size: 50px;
 	font-weight: 900;
-	letter-spacing: 1px;
+	letter-spacing: 19px;
 	visibility: hidden;
 }
 
