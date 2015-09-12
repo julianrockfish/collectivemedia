@@ -379,7 +379,6 @@ p.capitalize:first-letter {
 /* ================== MAIN WRAP SECTIONS ================== */
 
 #headerwrap {
-	background: url(../img/bg01.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top: 50px;
 	background-attachment: relative;
@@ -403,7 +402,7 @@ p.capitalize:first-letter {
 	color: white;
 	font-size: 50px;
 	font-weight: 900;
-	letter-spacing: 19px;
+	letter-spacing: 1px;
 	visibility: hidden;
 }
 
@@ -737,4 +736,6 @@ p.capitalize:first-letter {
 	}	
 }
 
-
+p #collective {
+	text-align: center;
+}
