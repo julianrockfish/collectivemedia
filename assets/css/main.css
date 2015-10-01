@@ -709,7 +709,11 @@ p.capitalize:first-letter {
 }
 
 
-
+iframe {
+    margin: none;
+    padding: none;
+    border: none;
+}
 
 
 @media (max-width: 600px) { 
@@ -737,5 +741,16 @@ p.capitalize:first-letter {
 }
 
 p #collective {
-	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: justify;
+}
+
+#vimeobtn {
+	background-color: #f2f2f2;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+
 }
