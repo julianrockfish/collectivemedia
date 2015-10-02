@@ -690,7 +690,7 @@ p.capitalize:first-letter {
 }
 
 #f ul li:before {
-	content: "\f099";
+	
 	font-family: 'FontAwesome';
 	font-weight: normal;
 	font-style: normal;
@@ -753,4 +753,10 @@ p #collective {
     font-size: 14px;
     color: #555;
 
+}
+
+form li label {
+
+	list-style-type: circle;
+	text-decoration: none;
 }
