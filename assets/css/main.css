@@ -495,7 +495,7 @@ p.capitalize:first-letter {
 
 /* ================== CALL TO ACTION WRAP SECTIONS & HELPERS ================== */
 #cta01 {
-	background: url(../img/cta/cta01.jpg) no-repeat center top;
+	background: url(../img/cta/cta04.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:100px;
 	text-align:center;
@@ -523,7 +523,7 @@ p.capitalize:first-letter {
 }
 
 #cta01 h2 {
-	color: white;
+	color:#D24D57;
 	font-weight: 700;
 	margin-bottom: 25px;
 }
