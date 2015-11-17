@@ -16,6 +16,15 @@ masthead {
     position: relative;
     min-width: 720px;
 }
+
+.covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .masthead-video {
     z-index: 0;
 }
@@ -137,6 +146,10 @@ a:after {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 .navbar {
@@ -380,10 +393,9 @@ p.capitalize:first-letter {
 
 #headerwrap {
 	margin-top: 0px;
-	padding-top: 50px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 1000px;
+	position: relative;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -398,7 +410,6 @@ p.capitalize:first-letter {
 }
 
 #headerwrap h1 {
-	margin-top: 60px;
 	color: white;
 	font-size: 50px;
 	font-weight: 900;
@@ -414,6 +425,12 @@ p.capitalize:first-letter {
 
 #headerwrap .img-responsive {
 	margin: 0 auto;
+}
+
+#headerwrap .container {
+	position: relative;
+	top: 0;
+	width: 100%;
 }
 
 
