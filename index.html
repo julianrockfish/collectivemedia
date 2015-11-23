@@ -44,23 +44,22 @@
 
 	<! ========== HEADERWRAP ==================================================================================================== 
 	=============================================================================================================================>
-    <div id="headerwrap">
-    		<div class="covervid-wrapper">
-	    		<video class="masthead-video" autoplay loop muted>
-					<source src="assets/videos/colorloop.mp4" type="video/mp4">
-					<source src="assets/videos/dreamscapes.webm" type="video/webm">
-				</video>
-			</div>
-    	<div class="container">
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h1 class="animation slideDown">collective media </h1>
-					<img src="assets/img/logo/cmlogowhite200.png">
-    				<p class="mt"><button type="button" class="btn btn-cta btn-lg"><A href="#process">LEARN MORE</button></p>
-				</div>
-				
-			</div><!-- /row -->
-    	</div><!-- /container -->
+    <div id="headerwrap" class="clearfix">
+		<div class="covervid-wrapper">
+    		<video class="masthead-video" loop muted poster="http://stefanerickson.github.io/covervid/assets/images/poster.jpg">
+				<source src="assets/videos/colorloop.mp4" type="video/mp4">
+				<source src="assets/videos/dreamscapes.webm" type="video/webm">
+			</video>
+			<div class="intro">
+				<div class="centered">
+					
+						<h1 class="animation slideDown">collective media </h1>
+						<img src="assets/img/logo/cmlogowhite200.png">
+	    				<p class="mt"><button type="button" class="btn btn-cta btn-lg"><A href="#process">LEARN MORE</button></p>
+					
+				</div><!-- /row -->
+    		</div><!-- /container -->
+		</div>
     </div> <!-- /headerwrap -->
 
 	<! ========== BLOG POSTS ==================================================================================================== 
@@ -619,6 +618,12 @@ var map = L.mapbox.map('map', 'kingjr0ck.ne575bm7')
 		// If using jQuery
 			// $('.masthead-video').coverVid(1920, 1080);
 		// If not using jQuery (Native Javascript)
+			var masthead = $('.covervid-wrapper');
+			var windowH = $(window).height();
+			var windowW = $(window).width();
+
+			masthead.width(windowW);
+			masthead.height(windowH);
 			coverVid(document.querySelector('.masthead-video'), 1920, 1080);
 	</script>
 
