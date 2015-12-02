@@ -18,7 +18,7 @@ masthead {
 }
 
 .covervid-wrapper {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -407,6 +407,33 @@ p.capitalize:first-letter {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#headerwrap .intro {
+  	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+	justify-content: center;
+  	align-items: center;
+
+  	height: 100vh;
+}
+
+#headerwrap .intro .row {
+	height: 100%;
+}
+#headerwrap .intro .centered {
+	position: relative;
+}
+
+@media screen and (max-device-width: 800px) {
+   
+    masthead-video {
+        display: none;
+    }
 }
 
 #headerwrap h1 {

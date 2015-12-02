@@ -30,6 +30,7 @@
     <script src="assets/js/hover_pack.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
     <script src="scripts/wufoo.js"></script>
+    <script src="assets/js/bower_components/matchMedia/matchMedia.js"></script>
 
     
 
@@ -44,23 +45,22 @@
 
 	<! ========== HEADERWRAP ==================================================================================================== 
 	=============================================================================================================================>
-    <div id="headerwrap">
-    		<div class="covervid-wrapper">
-	    		<video class="masthead-video" autoplay loop muted>
-					<source src="assets/videos/colorloop.mp4" type="video/mp4">
-					<source src="assets/videos/dreamscapes.webm" type="video/webm">
-				</video>
-			</div>
-    	<div class="container">
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2">
-					<h1 class="animation slideDown">collective media </h1>
-					<img src="assets/img/logo/cmlogowhite200.png">
-    				<p class="mt"><button type="button" class="btn btn-cta btn-lg"><A href="#process">LEARN MORE</button></p>
-				</div>
-				
-			</div><!-- /row -->
-    	</div><!-- /container -->
+    <div id="headerwrap" class="clearfix">
+		<div class="covervid-wrapper">
+    		<video class="masthead-video" loop muted poster="assets/img/covervid-bg.jpg">
+				<source data-vidsrc="assets/videos/colorloop.mp4" type="video/mp4">
+				<source data-vidsrc="assets/videos/dreamscapes.webm" type="video/webm">
+			</video>
+			<div class="intro">
+				<div class="centered">
+					
+						<h1 class="animation slideDown">collective media </h1>
+						<img src="assets/img/logo/cmlogowhite200.png">
+	    				<p class="mt"><button type="button" class="btn btn-cta btn-lg"><A href="#process">LEARN MORE</button></p>
+					
+				</div><!-- /row -->
+    		</div><!-- /container -->
+		</div>
     </div> <!-- /headerwrap -->
 
 	<! ========== BLOG POSTS ==================================================================================================== 
@@ -578,8 +578,9 @@ var map = L.mapbox.map('map', 'kingjr0ck.ne575bm7')
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/retina.js"></script>
+   <!-- <script src="assets/js/retina.js"></script> -->
     <script src="covervid.js"></script>
+    <script src="assets/js/handle-covervid.js"></script>
 
 
   	<script>
@@ -593,18 +594,6 @@ var map = L.mapbox.map('map', 'kingjr0ck.ne575bm7')
 				}
 			});
 		});
-	</script>    
-
-	<!-- Call CoverVid -->
-	<script type="text/javascript">
-		// If using jQuery
-			// $('.masthead-video').coverVid(1920, 1080);
-		// If not using jQuery (Native Javascript)
-			coverVid(document.querySelector('.masthead-video'), 1920, 1080);
-	</script>
-
-
-
-  
+	</script>      
   </body>
 </html>
