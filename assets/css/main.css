@@ -429,8 +429,17 @@ p.capitalize:first-letter {
 	position: relative;
 }
 
+#headerwrap .intro button {
+	display: block;
+	margin: 20px auto;
+}
+
 @media screen and (max-device-width: 800px) {
    
+    #headerwrap .intro img {
+    	max-width: 40%;
+    }
+
     masthead-video {
         display: none;
     }
@@ -763,7 +772,7 @@ iframe {
 @media (max-width: 600px) { 
 
 #headerwrap h1 {
-	font-size: 35px;
+	font-size: 30px;
 }
 
 #cta03 {
