@@ -55,7 +55,8 @@
 					
 						<h1 class="animation slideDown">collective media </h1>
 						<img src="assets/img/logo/cmlogowhite200.png">
-	    				<button type="button" class="btn btn-cta btn-lg"><A href="#process">LEARN MORE</button>
+						<h3> est. 2015 </h3>
+	    				<!-- <button type="button" class="btn btn-cta btn-lg"><A href="#process">LEARN MORE</button> -->
 					
 				</div><!-- /row -->
     		</div><!-- /container -->
@@ -78,7 +79,7 @@
 				<a class="b-link-fade b-animate-go" href="#"><img src="assets/img/portfolio/dport04.jpg" alt="" />
 					<div class="b-wrapper">
 					  	<h4 class="b-from-left b-animate b-delay03">Storyboarding</h4>
-					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					  	<!-- <p class="b-from-right b-animate b-delay03">Read More.</p> -->
 					</div>
 				</a>
 				<p>Creative Development </p>
@@ -91,7 +92,7 @@
 				<a class="b-link-fade b-animate-go" href="#"><img src="assets/img/portfolio/dport01.jpg" alt="" />
 					<div class="b-wrapper">
 					  	<h4 class="b-from-left b-animate b-delay03">Full Production Crew</h4>
-					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					  	<!-- <p class="b-from-right b-animate b-delay03">Read More.</p> -->
 					</div>
 				</a>
 				<p>Production</p>
@@ -104,7 +105,7 @@
 				<a class="b-link-fade b-animate-go" href="#"><img src="assets/img/portfolio/dport03.jpg" alt="" />
 					<div class="b-wrapper">
 					  	<h4 class="b-from-left b-animate b-delay03">Casting</h4>
-					  	<p class="b-from-right b-animate b-delay03">Read More.</p>
+					  	<!-- <p class="b-from-right b-animate b-delay03">Read More.</p> -->
 					</div>
 				</a>
 				<p>Edit & Post Production</p>
@@ -177,10 +178,10 @@
 			</div>
 		</div><!-- /row -->
 
-		<div class="row mt centered">
+		<!-- <div class="row mt centered">
 			<div class="col-lg-4 col-lg-offset-4">
     			<button type="button" id="vimeobtn" class="btn btn-theme btn-lg"><a href="https://vimeo.com/user18424445">VISIT OUR VIMEO PAGE </a></button>
-			</div>
+			</div> -->
 		</div><!-- /row -->
 	</div><!-- /container -->
 
@@ -330,7 +331,7 @@
 
 				<div class="col-lg-4 centered">
 					<div class="members">
-					  <img src="assets/img/team/jon02.png" alt="">
+					  <img src="assets/img/team/jon03.jpg" alt="">
 					  <div class="team-info">
 					    <div class="subhead">Producer</div>
 					    <h2 class="team-name">Jon</h2>
@@ -341,7 +342,7 @@
 
 				<div class="col-lg-4 centered">
 					<div class="members">
-					  <img src="assets/img/team/erich02.png" alt="">
+					  <img src="assets/img/team/erich03.jpg" alt="">
 					  <div class="team-info">
 					    <div class="subhead">Director</div>
 					    <h2 class="team-name">Erich</h2>
@@ -352,7 +353,7 @@
 				
 				<div class="col-lg-4 centered">
 					<div class="members">
-					  <img src="assets/img/team/casey02.png" alt="">
+					  <img src="assets/img/team/casey03.jpg" alt="">
 					  <div class="team-info">
 					    <div class="subhead">Designer</div>
 					    <h2 class="team-name">Casey</h2>
@@ -459,6 +460,16 @@
 L.mapbox.accessToken = 'pk.eyJ1Ijoia2luZ2pyMGNrIiwiYSI6ImNpZWhlM3gyaDAwYjZzMmtnNHB6bmJlZjMifQ.-spflRAxuCxwj_CcZ4mrRA';
 var map = L.mapbox.map('map', 'kingjr0ck.ne575bm7')
     .setView([41.8, -87.6], 10);
+
+    // Disable drag and zoom handlers.
+map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+map.keyboard.disable();
+
+// Disable tap handler, if present.
+if (map.tap) map.tap.disable();
 </script>
 
 	
