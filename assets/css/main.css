@@ -689,6 +689,7 @@ p.capitalize:first-letter {
 /* ================== TEAM MEMBERS INFORMATION OVER iMAGE ================== */
 .members {
   width: 302px;
+
   position: relative;
   float: left;
   margin: 0 20px 0 0;
@@ -697,6 +698,42 @@ p.capitalize:first-letter {
     position: relative;
   }
 }
+
+#casey:hover { 
+content: url('../img/team/casey2.jpg');
+ }
+
+#dan:hover { 
+content: url('../img/team/dan2.jpg');
+ }
+
+#erich:hover { 
+content: url('../img/team/erich2.jpg');
+ }
+
+#garrick:hover { 
+content: url('../img/team/garrick2.jpg');
+ }
+
+#jon:hover { 
+content: url('../img/team/jon2.jpg');
+ }
+
+#julian:hover { 
+content: url('../img/team/julian2.jpg');
+ }
+
+#lena:hover { 
+content: url('../img/team/lena2.jpg');
+ }
+
+#mike:hover { 
+content: url('../img/team/mike2.jpg');
+ }
+
+#pam:hover { 
+content: url('../img/team/pam2.jpg');
+ }
 
 .team-info {
   position: absolute;
