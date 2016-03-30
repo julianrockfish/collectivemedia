@@ -111,6 +111,13 @@ p {
     text-align: center;
 }
 
+
+@media only screen and (max-width: 992px) {
+	.row-mobile-centered > div {
+		text-align: center;
+	}
+}
+
 .goleft {
 	text-align: left;
 }
@@ -257,6 +264,12 @@ hr-d {
 p.capitalize {
 	display:block;
 	text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+	p.capitalize {
+		text-align: center;
+	}
 }
 
 p.capitalize:first-letter {
@@ -697,6 +710,13 @@ p.capitalize:first-letter {
     display: block;
     position: relative;
   }
+}
+
+@media only screen and (max-width: 768px) {
+	.members {
+		float: none;
+		margin: 0 auto;
+	}
 }
 
 #casey:hover { 
